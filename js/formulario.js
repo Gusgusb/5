@@ -21,7 +21,7 @@ formulario.addEventListener('submit', (event) => {
     setTimeout(() => {
         let nombre = document.querySelector('#nombre').value;
         let numero = document.querySelector('#numero').value;
-        let mensaje = 'send?phone=' + telefono + '&text=Hola, ' + nombre + ' confirma asistencia a la Boda de Lily y Jorge con ' + numero + ' acompañante(s).';
+        let mensaje = 'send?phone=' + telefono + '&text=Hola Adrián, ' + nombre + ' confirma asistencia a la Boda de Lily y Jorge con ' + numero + ' acompañante(s).';
         if(isMobile()) {
             window.open(urlMobile + mensaje, '_blank');
         }else{
