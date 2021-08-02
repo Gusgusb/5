@@ -13,21 +13,20 @@ const formulario = document.querySelector('#formulario');
 const buttonSubmit = document.querySelector('#submit');
 const urlDesktop = 'https://web.whatsapp.com/';
 const urlMobile = 'whatsapp://';
-const telefono = '+524423628382';
+const telefono = '+529993605483';
 
 formulario.addEventListener('submit', (event) => {
     event.preventDefault();
     buttonSubmit.disabled = true;
     setTimeout(() => {
         let nombre = document.querySelector('#nombre').value;
-        let numero = document.querySelector('#numero').value;
-        let mensaje = 'send?phone=' + telefono + '&text=Hola Adrián, ' + nombre + ' confirma asistencia a la Boda de Lily y Jorge con ' + numero + ' acompañante(s).';
+        let mensaje = 'send?phone=' + telefono + '&text=Hola Rossana, ' + nombre + ' a través de este mensaje confirmo asistencia a la Boda de Rossana y Gustavo este 21 de Agosto.';
         if(isMobile()) {
             window.open(urlMobile + mensaje, '_blank');
         }else{
             window.open(urlDesktop + mensaje, '_blank');
         }
-        buttonSubmit.innerHTML = 'Atenderé'
+        buttonSubmit.innerHTML = 'Asistiré'
         buttonSubmit.disabled = false
     }, 3000);
 });
