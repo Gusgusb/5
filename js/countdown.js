@@ -33,4 +33,4 @@ const countdown = (deadline, elem, finalMessage) => {
     }, 1000);
 };
 
-countdown('Aug 21 2021 16:00:00 GMT-0500', 'countdown', "Es hoy!!!");
+countdown('Mar 12 2022 16:30:00 GMT-0500', 'countdown', "Es hoy!!!");
