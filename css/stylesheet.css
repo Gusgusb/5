@@ -38,7 +38,7 @@ body {
 
 .letras-header {
   color: #006863;
-  font-size: 70px;
+  font-size: 100px;
   margin: 0 auto;
   font-family: Rochester;
 }
@@ -116,7 +116,7 @@ body {
 }
 
 .desc h3 {
-  font-size: 40px;
+  font-size: 80px;
   color: #26491c;
   display: block;
   margin-bottom: 40px;
